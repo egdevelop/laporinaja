@@ -1,7 +1,7 @@
 <?php
 include "server/server.php";
-if(isset($_POST['login'])){
-  Login();
+if(isset($_POST['daftar'])){
+  Daftar();
 }
 ?>
 
@@ -19,11 +19,16 @@ if(isset($_POST['login'])){
 
 <body>
     <div class="container">
-        <div style="margin-top: 50px; width: 60%; margin-left: 200px">
+        <div style="margin-top: 50px; width: 60%; margin-left:15vw" class="px-5">
             <div class="text-center">
                 <img src="assets/img/xarass.png" alt="" style="width: 100px ;">
             </div>
-            <form action="login.php" class="mt-5" method="post">
+            <form action="daftar.php" class="mt-5" method="post">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Masukan email..." />
+                </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Username</label>
                     <input type="text" name="username" class="form-control" id="exampleFormControlInput1"
@@ -31,16 +36,21 @@ if(isset($_POST['login'])){
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Password</label>
+                    <input type="password" name="confirm" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Konfirmasi Password .." />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Confirm Password</label>
                     <input type="password" name="password" class="form-control" id="exampleFormControlInput1"
                         placeholder="Masukkan Password .." />
                 </div>
                 <div class="d-grid gap-2 mt-5">
                     <button type="submit" class="btn btn-primary" style="background-color: red; border: none"
-                        name="login">Submit</button>
+                        name="daftar">Submit</button>
 
                 </div>
                 <br>
-                <a href="daftar.php" style="text-decoration: none ;">Tidak punya akun? Daftar
+                <a href="daftar.php" class="pb-5" style="text-decoration: none ;">Tidak punya akun? Daftar
                     disini</a>
             </form>
         </div>
