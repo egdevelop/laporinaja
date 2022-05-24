@@ -7,12 +7,12 @@ if(isset($_SESSION['username'])){
     Dropdown button
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">Beranda</a></li>
-    <li><a class="dropdown-item" href="#">Edukasi</a></li>
-    <li><a class="dropdown-item" href="#">Pelaporan</a></li>
+    <li><a class="dropdown-item" href="index.php">Beranda</a></li>
+    <li><a class="dropdown-item" href="edukasi.php">Edukasi</a></li>
+    <li><a class="dropdown-item" href="pelaporan.php">Pelaporan</a></li>
     <li><a class="dropdown-item" href="#">Rehabilitasi</a></li>
     <li><a class="dropdown-item" href="#">History</a></li>
-    <li><a class="dropdown-item" href="#">Log Out</a></li>
+    <li><a class="dropdown-item" href="server/logout.php">Log Out</a></li>
   </ul>
 </div>';
 }else{
