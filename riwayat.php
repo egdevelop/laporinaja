@@ -51,56 +51,87 @@ if(isset($_SESSION['username'])){
         </div>
     </nav>
     <main>
-        <div class="container text-center" id="beranda">
-            <h2 class="fw-bold" style="margin-top: 200px ;">“Keamananmu yang Utama”</h2>
-            <p>Segera Laporkan Berbagai Bentuk</p>
-            <p>Tindak Pidana Kekerasan Seksual</p>
-            <p>di Sekitar Anda</p>
-
-            <div class="d-flex justify-content-between px-5 mt-5">
-                <div class="d-flex">
-                    <img class="rounded-circle" width="80px" height="80px"
-                        src="https://greatmind.id/uploads/contributor-detail/739a579afaa6613b12930f1a7d90769df8107735.jpg"
-                        alt="">
-                    <div style="width: 250px ; margin-left: 10px; height: 80px ; background-color: red;"></div>
-                </div>
-                <div class="d-flex">
-                    <img class="rounded-circle" width="80px" height="80px"
-                        src="https://greatmind.id/uploads/contributor-detail/739a579afaa6613b12930f1a7d90769df8107735.jpg"
-                        alt="">
-                    <div style="width: 250px ; margin-left: 10px; height: 80px ; background-color: red;"></div>
+        <div class="container">
+            <div class="text-center" style="padding-top: 100px ;">
+                <h3 class="mt-5 fw-bold">Xarass App</h3>
+                <p>Menolak dan Menanggulangi</p>
+                <p>Tindak Pidana Kekerasan Seksual</p>
+                <p>pada Masyarakat Indonesia</p>
+            </div>
+            <div class="card mt-5">
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Bentuk Pelaporan</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="d-flex justify-content-between px-5 mt-5">
-                <div class="d-flex">
-                    <img class="rounded-circle" width="80px" height="80px"
-                        src="https://greatmind.id/uploads/contributor-detail/739a579afaa6613b12930f1a7d90769df8107735.jpg"
-                        alt="">
-                    <div style="width: 250px ; margin-left: 10px; height: 80px ; background-color: red;"></div>
+            <div class="card mt-5">
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Bentuk Rehabilitasi</th>
+                                <th scope="col">Nama Psikolog</th>
+                                <th scope="col">Antrian</th>
+                                <th scope="col">Hari/Tanggal</th>
+                                <th scope="col">Waktu</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="d-flex">
-                    <img class="rounded-circle" width="80px" height="80px"
-                        src="https://greatmind.id/uploads/contributor-detail/739a579afaa6613b12930f1a7d90769df8107735.jpg"
-                        alt="">
-                    <div style="width: 250px ; margin-left: 10px; height: 80px ; background-color: red;"></div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-between px-5 mt-5">
-                <div class="d-flex">
-                    <img class="rounded-circle" width="80px" height="80px"
-                        src="https://greatmind.id/uploads/contributor-detail/739a579afaa6613b12930f1a7d90769df8107735.jpg"
-                        alt="">
-                    <div style="width: 250px ; margin-left: 10px; height: 80px ; background-color: red;"></div>
-                </div>
-                <div class="d-flex">
-                    <img class="rounded-circle" width="80px" height="80px"
-                        src="https://greatmind.id/uploads/contributor-detail/739a579afaa6613b12930f1a7d90769df8107735.jpg"
-                        alt="">
-                    <div style="width: 250px ; margin-left: 10px; height: 80px ; background-color: red;"></div>
-                </div>
-            </div>
-            <div class="text-center">
-                <button class="btn btn-primary mt-5">Isi Formulir</button>
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

@@ -51,56 +51,39 @@ if(isset($_SESSION['username'])){
         </div>
     </nav>
     <main>
-        <div class="container text-center" id="beranda">
-            <h2 class="fw-bold" style="margin-top: 200px ;">“Keamananmu yang Utama”</h2>
-            <p>Segera Laporkan Berbagai Bentuk</p>
-            <p>Tindak Pidana Kekerasan Seksual</p>
-            <p>di Sekitar Anda</p>
+        <div class="container">
+            <div class="d-flex" style="margin-top: 150px ;">
+                <img class="rounded-circle" width="80px" height="80px"
+                    src="https://greatmind.id/uploads/contributor-detail/739a579afaa6613b12930f1a7d90769df8107735.jpg"
+                    alt="">
+                <div>
+                    <div class="text-light rounded"
+                        style="width: 300px ; padding: 10px; margin-left: 10px; height: fit-content ; background-color: red;">
+                        <h4> Psikolog?</h4>
+                        <p>Sekilas perkenalan tentang psikolog dan kapan harus ke psikolog.</p>
+                    </div>
+                    <div class="text-center text-light fw-bold rounded"
+                        style="width: 300px ; margin-top:10px; margin-left: 10px; padding: 10px; height: fit-content ; background-color: red;">
+                        Hubungi Sikiater
+                    </div>
+                </div>
+            </div>
 
-            <div class="d-flex justify-content-between px-5 mt-5">
-                <div class="d-flex">
-                    <img class="rounded-circle" width="80px" height="80px"
-                        src="https://greatmind.id/uploads/contributor-detail/739a579afaa6613b12930f1a7d90769df8107735.jpg"
-                        alt="">
-                    <div style="width: 250px ; margin-left: 10px; height: 80px ; background-color: red;"></div>
+            <div class="d-flex justify-content-end">
+                <div>
+                    <div class="text-light rounded"
+                        style="width: 300px ; padding: 10px; margin-right: 10px; height: fit-content ; background-color: red;">
+                        <h4> Psikolog?</h4>
+                        <p>Sekilas perkenalan tentang psikolog dan kapan harus ke psikolog.</p>
+                    </div>
+                    <div class="text-center text-light fw-bold rounded"
+                        style="width: 300px ; margin-top:10px; margin-right: 10px; padding: 10px; height: fit-content ; background-color: red;">
+                        Hubungi Sikiater
+                    </div>
                 </div>
-                <div class="d-flex">
-                    <img class="rounded-circle" width="80px" height="80px"
-                        src="https://greatmind.id/uploads/contributor-detail/739a579afaa6613b12930f1a7d90769df8107735.jpg"
-                        alt="">
-                    <div style="width: 250px ; margin-left: 10px; height: 80px ; background-color: red;"></div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-between px-5 mt-5">
-                <div class="d-flex">
-                    <img class="rounded-circle" width="80px" height="80px"
-                        src="https://greatmind.id/uploads/contributor-detail/739a579afaa6613b12930f1a7d90769df8107735.jpg"
-                        alt="">
-                    <div style="width: 250px ; margin-left: 10px; height: 80px ; background-color: red;"></div>
-                </div>
-                <div class="d-flex">
-                    <img class="rounded-circle" width="80px" height="80px"
-                        src="https://greatmind.id/uploads/contributor-detail/739a579afaa6613b12930f1a7d90769df8107735.jpg"
-                        alt="">
-                    <div style="width: 250px ; margin-left: 10px; height: 80px ; background-color: red;"></div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-between px-5 mt-5">
-                <div class="d-flex">
-                    <img class="rounded-circle" width="80px" height="80px"
-                        src="https://greatmind.id/uploads/contributor-detail/739a579afaa6613b12930f1a7d90769df8107735.jpg"
-                        alt="">
-                    <div style="width: 250px ; margin-left: 10px; height: 80px ; background-color: red;"></div>
-                </div>
-                <div class="d-flex">
-                    <img class="rounded-circle" width="80px" height="80px"
-                        src="https://greatmind.id/uploads/contributor-detail/739a579afaa6613b12930f1a7d90769df8107735.jpg"
-                        alt="">
-                    <div style="width: 250px ; margin-left: 10px; height: 80px ; background-color: red;"></div>
-                </div>
-            </div>
-            <div class="text-center">
-                <button class="btn btn-primary mt-5">Isi Formulir</button>
+                <img class="rounded-circle" width="80px" height="80px"
+                    src="https://greatmind.id/uploads/contributor-detail/739a579afaa6613b12930f1a7d90769df8107735.jpg"
+                    alt="">
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
