@@ -50,7 +50,7 @@ if(isset($_POST['daftar'])){
 
                 </div>
                 <br>
-                <a href="daftar.php" class="pb-5" style="text-decoration: none ;">Tidak punya akun? Daftar
+                <a href="login.php" class="pb-5" style="text-decoration: none ;">Sudah punya akun? Login
                     disini</a>
             </form>
         </div>

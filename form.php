@@ -1,5 +1,5 @@
 <?php
-session_start();
+include "server/server.php";
 
 if(isset($_SESSION['username'])){
   $btn = '<div class="dropdown">
@@ -22,6 +22,10 @@ if(isset($_SESSION['username'])){
               href="login.php"
               >Sign in / Sign up</a
             >';
+}
+
+if(isset($_POST['pelaporan'])){
+    Pelaporan();
 }
 
 ?>
@@ -52,26 +56,27 @@ if(isset($_SESSION['username'])){
     </nav>
     <main>
         <div class="container">
-            <form class="" style="margin-top: 150px ;">
+            <form class="" method="POST" action="form.php" style="margin-top: 150px ;" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label class="form-label">Nama</label>
-                    <input type="text" class="form-control">
+                    <input type="text" name="nama" class="form-control">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Email</label>
-                    <input type="text" class="form-control">
+                    <input type="text" value="<?= $_SESSION['email'] ?>" name="email" class="form-control" disabled>
+                    <input type="hidden" value="<?= $_SESSION['email'] ?>" name="email" class="form-control">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">TTL</label>
-                    <input type="date" class="form-control">
+                    <label class="form-label">Tempat , Tanggal Lahir</label>
+                    <input type="date" name="ttl" class="form-control">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">NIK</label>
-                    <input type="text" class="form-control">
+                    <input type="text" name="nik" class="form-control">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Bentuk kekerasan Seksual</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" name="bentuk_kekerasan" aria-label="Default select example">
                         <option selected>Pilih satu..</option>
                         <option value="1">pelecehan seksual fisik</option>
                         <option value="2">pelecehan seksual nonfisik</option>
@@ -86,22 +91,22 @@ if(isset($_SESSION['username'])){
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Waktu Kejadian</label>
-                    <input type="date" class="form-control">
+                    <input type="date" name="waktu_kejadian" class="form-control">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Tempat Kejadian</label>
-                    <input type="text" class="form-control">
+                    <input type="text" name="tempat_kejadian" class="form-control">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Kronologi</label>
-                    <input type="text" class="form-control">
+                    <input type="text" name="kronologi" class="form-control">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Bukti kejadian</label>
-                    <input type="file" class="form-control">
+                    <input type="file" name="bukti" class="form-control">
                 </div>
                 <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" name="pelaporan" class="btn btn-primary">Submit</button>
                 </div>
             </form>
             <br>

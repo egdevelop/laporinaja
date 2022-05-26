@@ -64,7 +64,7 @@ if(isset($_SESSION['username'])){
                     </div>
                     <div class="text-center text-light fw-bold rounded"
                         style="width: 300px ; margin-top:10px; margin-left: 10px; padding: 10px; height: fit-content ; background-color: red;">
-                        Hubungi Sikiater
+                        <a href="skiater.php" style="text-decoration: none ; color:#fff;">Hubungi</a>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@ if(isset($_SESSION['username'])){
                     </div>
                     <div class="text-center text-light fw-bold rounded"
                         style="width: 300px ; margin-top:10px; margin-right: 10px; padding: 10px; height: fit-content ; background-color: red;">
-                        Hubungi Sikiater
+                        <a href="skiater.php" style="text-decoration: none ; color:#fff;">Hubungi</a>
                     </div>
                 </div>
                 <img class="rounded-circle" width="80px" height="80px"

@@ -69,20 +69,55 @@ if(isset($_SESSION['username'])){
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                            </tr>
+                            <?php
+                                session_start();
+                                include 'server/server.php';
+                                $data = mysqli_query($conn, "SELECT * FROM pelaporan");
+                                $no = 1;
+                                while($row = mysqli_fetch_array($data)){
+                                    if($row['status'] == 0){
+                                        $status = '<span class="badge bg-danger">Belum Ditanggulangi</span>';
+                                    }else{
+                                        $status = '<span class="badge bg-success">Sudah Ditanggulangi</span>';
+                                    }
+                                    switch ($row['bentuk_kekerasan'])
+                                    {
+                                        case 1:
+                                            $bentuk = 'pelecehan seksual fisik';
+                                            break;
+                                        case 2:
+                                            $bentuk = 'pelecehan seksual nonfisik';
+                                            break;
+                                        case 3:
+                                            $bentuk = 'pemaksaan kontrasepsi';
+                                            break;
+                                        case 4:
+                                            $bentuk = 'Pemaksaan Sterilisasi';
+                                            break;
+                                        case 5:
+                                            $bentuk = 'Pemaksaan Perkawinan';
+                                            break;
+                                        case 6:
+                                            $bentuk = 'Penyiksaan Seksual';
+                                            break;
+                                        case 7:
+                                            $bentuk = 'Eksploitasi Seksual';
+                                            break;
+                                        case 8:
+                                            $bentuk = 'Perbudakaan Seksual';
+                                            break;
+                                        case 9:
+                                            $bentuk = 'Kekerasan Seksual Berbasis Elektronikn';
+                                            break;
+                                    }
+                                    echo '<tr>
+                                            <th scope="row">'.$no.'</th>
+                                            <td>'.$bentuk.'</td>
+                                            <td>'.$status.'</td>
+                                        </tr>';
+                                    $no++;
+                                }
+                            ?>
                         </tbody>
                     </table>
                 </div>
@@ -102,33 +137,25 @@ if(isset($_SESSION['username'])){
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                            </tr>
+                            <?php
+                                $data2 = mysqli_query($conn, "SELECT * FROM rehab");
+                                while($row2 = mysqli_fetch_array($data2)){
+                                    if($row2['status'] == 0){
+                                        $status = '<span class="badge bg-danger">Belum Ditanggulangi</span>';
+                                    }else{
+                                        $status = '<span class="badge bg-success">Sudah Ditanggulangi</span>';
+                                    }
+                                    echo '<tr>
+                                            <th scope="row">'.$row2['id'].'</th>
+                                            <td>'.$row2['bentuk_rehab'].'</td>
+                                            <td>'.$row2['nama_psikolog'].'</td>
+                                            <td>'.$row2['antrian'].'</td>
+                                            <td>'.$row2['tanggal'].'</td>
+                                            <td>'.$row2['waktu'].'</td>
+                                            <td>'.$status.'</td>
+                                        </tr>';
+                                }
+                            ?>
                         </tbody>
                     </table>
                 </div>
